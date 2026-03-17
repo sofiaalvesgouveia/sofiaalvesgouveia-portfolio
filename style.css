@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-synthesis: none; /* para meter a font orignal sem propriedades ig ? */
+    cursor:crosshair;
+    overflow-x: hidden;
+}
+body#index{
+    background-color: rgb(255, 255, 255);
+}
+@font-face {
+  font-family: CormorantGaramondLightItalic;
+  src: url("fonts/CormorantGaramond-LightItalic.ttf");
+}
+@font-face {
+  font-family: CormorantGaramondItalic;
+  src: url("fonts/CormorantGaramond-Italic.ttf");
+}
+@font-face {
+  font-family: GeistREgular;
+  src: url("fonts/Geist-Regular.ttf");
+}
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    text-align: center;
+    font-family: CormorantGaramondItalic;
+    background-color: white;
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    font-size: 26px;
+
+
+}
+
+.hidden {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+::selection { 
+    color: black;
+    background: rgb(185, 240, 180);
+} 
+.aspasGeist{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: GeistRegular;
+    font-size: 20px; 
+}
+.introCenter { 
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    flex-direction: column;
+}
+.introCenter h1 {
+    max-width: 900px;
+    text-align: center;
+    font-size: 60px;
+    font-family: CormorantGaramondLightItalic;
+    line-height: 60px;
+}
+.underline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    
+}
+a {
+    user-select: none;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    transition: padding 0.4s ease;
+}
+a:hover {
+  cursor: cell;
+}
+.menu a:hover{
+    padding-bottom: 25px;
+
+}
+/*Bacnground colors*/
+#projects {
+    background-color: rgb(247, 209, 220);
+}
+#aboutMe {
+    background-color: rgb(237, 123, 87);
+}
+
+/* bodyProjects */
+body#projects {
+    background-color: rgb(247, 209, 220);
+}
+.introCenter h3{
+    font-family: geistRegular;
+    font-size: 16px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.introCenter a {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 20px; 
+}
+.headerX {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.headerX a{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: GeistRegular;
+    font-size: 24px;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+}
+
+
+/* bodyAboutMe */
+body#aboutMe {
+    background-color: rgb(237, 123, 87);
+}
+
+.introCenter p {
+    font-family: CormorantGaramondItalic;
+    font-size: 38px;
+    text-align: left;
+    margin-left: 28px;
+    margin-right: 28px;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+
+
+/* bodyTafechado */
+body#taFechado {
+    background-color: rgb(130, 163, 207);
+}
+.imageFull{
+    margin-bottom: 100px;
+}
+.imageFull img{
+    width: 100%;
+}
+.headerXProjects {
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+.headerXProjects p {
+    grid-column: 2;
+    justify-self: center;
+}
+.headerXProjects a {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: GeistRegular;
+    font-size: 24px;
+
+    grid-column: 3;  
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.gridImage {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 150px;
+    padding-bottom: 10px;
+}
+.item{
+    margin: 5px;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#grid1 img{
+    border-top-left-radius: 12px;
+}
+#grid2 img{
+    border-top-right-radius: 12px;
+}
+#grid3 img{
+    border-bottom-left-radius: 12px;
+}
+#grid4 img{
+    border-bottom-right-radius: 12px;
+}
+
+.imageMid img{
+    width: 45%;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+}
+.details p{
+    font-size: 12px;
+}
+.details {
+    margin-top: 150px;
+}
+
+/* bodyReconfig */
+body#reconfig {
+    background-color: rgb(0, 0, 0);
+}
+.gridImage2 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+
+body#reconfig {
+    color: white;
+}
+body#reconfig a {
+    color: white;
+}
+body#reconfig .introCenter p {
+    font-family: CormorantGaramondLightItalic;
+}
+
+/* bodyArquivista */
+body#arquivista {
+    background-color: rgb(237, 237, 237);
+}
+video{
+    width: 100%;
+}
+
+/* bodyFiccoes */
+body#tresFiccoes {
+    background-color: rgb(255, 255, 255);
+}
+body#tresFiccoes footer {
+    margin-top: 80px;
+}
+body#tresFiccoes .introCenter p{
+    margin-top: 80px;
+}
+
+
+@media (max-width: 1000px){
+    .overlay{
+        display: flex;
+    }
+
+}
