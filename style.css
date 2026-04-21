@@ -276,8 +276,22 @@ body#tresFiccoes footer {
 body#tresFiccoes .introCenter p{
     margin-top: 80px;
 }
+.gridImage2#lessMargin{
+    padding-top: 0 !important ;
+}
+.imageFull#lessMargin{
+    margin-bottom: 0 !important;
+}
 
+/* bodyCNDC*/
 
+body#cndclab {
+    color: white;
+    background-color: rgb(0,0,0);
+}
+body#cndclab a {
+    color: white;
+}
 @media (max-width: 1000px){
     .overlay{
         display: flex;
